@@ -20,5 +20,11 @@ Homepage: Welcome message, featured products
   Part 1 (Due 27 Aug): Research, wireframes, content draft
   Part 2 (Due 26 Sept): Full website and testing.
 
+sitemap: 
 
+Home
+├── About
+├── Services
+├── Enquiries
+└── Contact
 
