@@ -23,8 +23,12 @@ Homepage: Welcome message, featured products
 sitemap: 
 
 Home
+
 ├── About
+
 ├── Services
+
 ├── Enquiries
+
 └── Contact
 
