@@ -33,11 +33,11 @@ Home
 └── Contact
 
 Changelog:
-Rearranged navigation tab to Home, About, Menu, Enquire then Contact
-Created a folder for css files and images.
-Fixed active class in about page.
-Insterted pictures respectively.
-Created an enquire page
+-Rearranged navigation tab to Home, About, Menu, Enquire then Contact
+-Created a folder for css files and images.
+-Fixed active class in about page.
+-Insterted pictures respectively.
+-Created an enquire page
 
 References:
 W3schools,(2025).Available at: https://www.w3schools.com (Accessed:16 November 2025).
