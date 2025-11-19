@@ -14,11 +14,11 @@ Homepage: Welcome message, featured products
 - Online Ordering: Cart, payments will be done via bank account or cash
 - About Us: Bakery story and team
 - Contact: Contact details and location of physical store. 
-- Newsletter signup, weekly updates will be sent via emails.
 
   Timeline:
   Part 1 (Due 27 Aug): Research, wireframes, content draft
   Part 2 (Due 26 Sept): Full website and testing.
+  Part 3 (Due 19 Nov): final touches
 
 sitemap: 
 
@@ -32,3 +32,19 @@ Home
 
 └── Contact
 
+Changelog:
+Rearranged navigation tab to Home, About, Menu, Enquire then Contact
+Created a folder for css files and images.
+Fixed active class in about page.
+Insterted pictures respectively.
+Created an enquire page
+
+References:
+W3schools,(2025).Available at: https://www.w3schools.com (Accessed:16 November 2025).
+Pixabay,(2025).bread.[Online image].Available at:https://pixabay.com/(Accessed: 26 September 2025).
+Pixabay,(2025).cake.[Online image].Available at:https://pixabay.com/(Accessed: 26 September 2025).
+Pixabay,(2025).cupcakes.[Online image].Available at:https://pixabay.com/(Accessed: 26 September 2025).
+Pixabay,(2025).image of man.[Online image].Available at:https://pixabay.com/(Accessed: 16 November 2025).
+Pixabay,(2025).image of younger black female.[Online image].Available at:https://pixabay.com/(Accessed: 26 September 2025).
+Pixabay,(2025).image of black older female.[Online image].Available at:https://pixabay.com/(Accessed: 26 September 2025).
+Programming with Mosh (2022) Java tutorial for beginners.[online video].Available at:https://www.youtube.com/watch?v=xxxxxxxx(Accessed: 17 November 2025)
