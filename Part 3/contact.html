@@ -1,0 +1,82 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faith's Bakery | Contact</title>
+  <!-- Shared Navigation CSS -->
+  <link rel="stylesheet" href="css/index.css">
+  <!-- Contact Page CSS -->
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel ="stylesheet" href="https://unpkg.com/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Faith's Bakery</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+		<li><a href="menu.html">Menu</a></li>
+		<li><a href="enquiry.html">Enquire</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+ <div class="map-container">
+  <div id="map" > </div>
+  </div>
+  
+  <script>
+var map = L.map('map').setView([-33.9249, 18.4241],13);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+	maxZoom:19,
+	attribution: '&copy; OpenStreetMap Contributors'
+}).addTo(map);
+
+var marker = L.marker([-33.9249,18.4241]).addTo(map);
+
+marker.bindPopup("<b>We are here!</b><br>Cape Town").openPopup();
+
+</script>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h1>Contact Us</h1>
+    <p class="intro">We’d love to hear from you! Reach out with any questions, custom cake requests, or feedback.</p>
+
+    <div class="contact-container">
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h2>Visit Us</h2>
+        <p>123 Sweet Street, Cape Town, South Africa</p>
+
+        <h2>Call Us</h2>
+        <p>+27 65 123 4567</p>
+
+        <h2>Email Us</h2>
+        <p>faithsbakery@gmail.com</p>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2>Send a Message</h2>
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Faith's Bakery | Designed with ❤️</p>
+  </footer>
+</body>
+</html>

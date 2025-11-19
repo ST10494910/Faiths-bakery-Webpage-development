@@ -1,0 +1,65 @@
+.menu-section {
+  padding: 4rem 5%;
+  background-color: #fff8f5;
+  text-align: center;
+}
+
+.menu-section h1 {
+  color: #4a2c2a;
+  margin-bottom: 0.5rem;
+}
+
+.menu-section .intro {
+  margin-bottom: 3rem;
+  color: #555;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  text-align: left;
+}
+
+.menu-category {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  border: 1px solid #f1d3da;
+}
+
+.menu-category h2 {
+  margin-bottom: 1rem;
+  color: #b56576;
+  border-bottom: 2px solid #f7c6d9;
+  padding-bottom: 0.5rem;
+}
+
+.menu-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-category li {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.menu-category li .price {
+  font-weight: bold;
+  color: #4a2c2a;
+}
+
+footer {
+  text-align: center;
+  background: #4a2c2a;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+

@@ -1,0 +1,106 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faith's Bakery | Enquiry</title>
+  <!-- Shared Navigation CSS -->
+  <link rel="stylesheet" href="css/index.css">
+  <!-- Enquiry Page CSS -->
+  <link rel="stylesheet" href="css/enquiry.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Faith's Bakery</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+		<li><a href="enquiry.html" class="active">Enquire</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Enquiry Section -->
+  <section class="enquiry-section">
+    <h1>Send Us an Enquiry</h1>
+    <p class="intro">Have a question, order request, or feedback? Fill out the form below!</p>
+
+    <div class="enquiry-container">
+      <form id="enquiryForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your Email" required>
+
+        <label for="enquiryType">Enquiry Type</label>
+        <select id="enquiryType" required>
+          <option value="">Select Enquiry Type</option>
+          <option value="General">General</option>
+          <option value="Order">Order</option>
+          <option value="Custom Cake">Custom Cake</option>
+          <option value="Feedback">Feedback</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Submit</button>
+        <p id="responseMessage"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Faith's Bakery | Designed with ❤️</p>
+  </footer>
+
+  <!-- Form Validation and Response Script -->
+  <script>
+    const form = document.getElementById('enquiryForm');
+    const responseMessage = document.getElementById('responseMessage');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      // Simple validation
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const type = document.getElementById('enquiryType').value;
+      const message = document.getElementById('message').value.trim();
+
+      if (!name || !email || !type || !message) {
+        responseMessage.textContent = 'Please fill in all fields.';
+        responseMessage.style.color = 'red';
+        return;
+      }
+
+      // Email format check
+      const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+      if (!emailRegex.test(email)) {
+        responseMessage.textContent = 'Please enter a valid email address.';
+        responseMessage.style.color = 'red';
+        return;
+      }
+
+      // Message length check
+      if (message.length < 10) {
+        responseMessage.textContent = 'Message must be at least 10 characters.';
+        responseMessage.style.color = 'red';
+        return;
+      }
+
+      // Success response
+      responseMessage.textContent = 'Thank you for making an enquiry! We will get back to you soon as we can.';
+      responseMessage.style.color = 'green';
+
+      // Clear form
+      form.reset();
+    });
+  </script>
+</body>
+</html>

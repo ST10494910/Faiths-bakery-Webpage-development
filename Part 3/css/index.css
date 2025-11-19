@@ -1,0 +1,233 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #fffaf8;
+  color: #4a2c2a; /* deep brown */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  color: #4a2c2a;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+/* Navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: #f7c6d9; /* soft pink */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4a2c2a;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #b56576; /* darker pink/brown accent */
+}
+
+/* Hero */
+.hero {
+  background: url("images/hero-bakery.jpg") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 8rem 5%;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top:0; left:0; right:0; bottom:0;
+  background: rgba(74, 44, 42, 0.5); /* brown overlay */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #b56576;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #8e3d4c;
+}
+
+/* Highlights */
+.highlights {
+  padding: 4rem 5%;
+  text-align: center;
+}
+
+.highlights h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #4a2c2a;
+}
+/*Gallery lightbox*/
+.gallery img{
+width:500 px;
+margin:8px;
+cursor: pointer;
+border-radius:6px;
+transition:0.3s;
+}
+.gallery img:hover{
+opacity:0.7;
+}
+.lightbox {
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.8);
+justify-content: center;
+align-items: center;
+}
+
+.lightbox img {
+max-width:85%;
+max-height:85%;
+border-radius:8px;
+}
+.close{
+position: absolute;
+top: 30px;
+right: 40px;
+font-size: 50px;
+color: #fff;
+cursor: pointer;
+}
+.cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #f1d3da;
+  border-radius: 8px;
+  padding: 1rem;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  background-color: #f7c6d9;
+  padding: 3rem 5%;
+}
+
+.cta h2 {
+  margin-bottom: 1rem;
+  color: #4a2c2a;
+}
+
+.cta p {
+  margin-bottom: 1.5rem;
+}
+
+
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #4a2c2a;
+  color: white;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .hero {
+    padding: 6rem 2rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
